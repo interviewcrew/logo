@@ -1,7 +1,8 @@
-<svg width="310" height="310" viewBox="0 0 310 270" xmlns="http://www.w3.org/2000/svg">
+<svg width="310" height="350" viewBox="0 0 310 350" xmlns="http://www.w3.org/2000/svg">
   <!-- 
-    This SVG creates a logo pattern forming a mathematically equilateral triangle.
+    This SVG creates a logo pattern forming a mathematically equilateral triangle, with a head and body shape at the bottom.
     - The gradient now uses 'userSpaceOnUse' to create a single, continuous flow of color across the entire logo.
+    - The body shape is now a rounded rectangle.
   -->
   <defs>
     <!-- 
@@ -34,14 +35,19 @@
   <!-- Row 4: Single shape, no group needed -->
   <rect x="118" y="170" width="75" height="30" rx="15" ry="15" fill="url(#logoGradient)" />
 
-  <!-- Row 5: Single shape with a solid fill color -->
-  <circle cx="155" cy="224" r="15" fill="#43c2a2" />
+  <!-- Row 5: Head and Body group with a solid fill color -->
+  <g fill="#43c2a2">
+    <!-- The Head -->
+    <circle cx="155" cy="235" r="15" />
+    <!-- The Body: Now a standard rounded rectangle -->
+    <rect x="140" y="260" width="30" height="75" rx="15" ry="15" />
+  </g>
 
   <!-- Verification Lines for Equilateral Triangle -->
   <!-- The length of the first line is 266 -->
   <!-- The length of the second line is 265.68 -->
   <!-- The length of the third line is 265.68 -->
-  <line x1="22" y1="20" x2="288" y2="20" stroke="red" stroke-width="2" />
+  <!-- <line x1="22" y1="20" x2="288" y2="20" stroke="red" stroke-width="2" />
   <line x1="22" y1="20" x2="155" y2="250" stroke="red" stroke-width="2" />
-  <line x1="288" y1="20" x2="155" y2="250" stroke="red" stroke-width="2" />
+  <line x1="288" y1="20" x2="155" y2="250" stroke="red" stroke-width="2" /> -->
 </svg>
